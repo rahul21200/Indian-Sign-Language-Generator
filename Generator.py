@@ -22,7 +22,12 @@ def rr_main():
         plt.pause(2)
         plt.close
 
-    path = (r'C:\Users\USER\OneDrive\Desktop\Proj\Indian Sign Language Generation\Reverse sign images\\')
+    # path = (r'C:\Users\USER\OneDrive\Desktop\Proj\Indian Sign Language Generation\Reverse sign images\\')
+    dir_name = os.path.dirname(__file__)
+    filename = os.path.join(
+        dir_name, 'Reverse sign images//')
+
+    path = filename
     voice = sr.Recognizer()
     text = []
     with sr.Microphone() as source:
