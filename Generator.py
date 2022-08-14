@@ -47,7 +47,7 @@ def rr_main():
 
     text.lower()
     # text = "".join(text)
-    print(type(text))
+    # print(type(text))
     try:
         for l in text:
             if l != ' ':
